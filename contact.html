@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLETİŞİM FORMU</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+  <style>
+    .container {
+    background-image:url("./resimler/5.jpg") ;
+    }
+ </style>
+
+
+
+
+    
+
+</head>
+<body >
+
+    <nav>
+        <ul>
+            <li><a href="index.html">ANASAYFA</a></li>
+            <li><a href="isimçiçek.html">İSİM BUKETİ</a></li>
+           <li><a href="contact.html">İLETİŞİM FORMU</a></li>
+        </ul>
+    </nav>
+ 
+ <div class="container">
+    
+    
+    <h2 >İLETİŞİM FORMU</h2>
+
+   
+    
+    <form  method="POST">
+        <div class="form-group">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+    </form>
+    <form  method="POST">
+        <div class="form-group">
+            <label for="surname">Soyad:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+    </form>
+    <form  method="POST">
+        <div class="form-group">
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    </form>
+    <form  method="POST">
+        <div class="form-group">
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+    <form   method="POST">
+
+       
+        <button class="gödertuşu mt-3" type="submit"  >Gönder</button>
+       
+       
+    </form>
+</div>
+
+
+</body>
+</html>

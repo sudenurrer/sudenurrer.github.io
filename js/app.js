@@ -1,23 +1,23 @@
 /*başa dön butonu*/
-// Başa dön butonunu seçme
+
 var basadonButton = document.getElementById("basadonButton");
 
-// Sayfa scroll olayını dinleme
+
 window.addEventListener("scroll", function() {
-    // Sayfanın aşağı kaydırılma miktarını kontrol etme
-    if (window.pageYOffset > 100) { // Örneğin, 100 piksel aşağı kaydırıldığında göster
+  
+    if (window.pageYOffset > 100) { 
         basadonButton.classList.add("show");
     } else {
         basadonButton.classList.remove("show");
     }
 });
 
-// Başa dön butonuna tıklama olayını dinleme
+
 basadonButton.addEventListener("click", function() {
-    // Sayfanın en üstüne git
+    
     window.scrollTo({
         top: 0,
-        behavior: "smooth" // Yumuşak kaydırma efekti için
+        behavior: "smooth" 
     });
 });
 
@@ -25,17 +25,17 @@ basadonButton.addEventListener("click", function() {
 function placeOnTop(imageSrc) {
     const flowerContainer = document.getElementById('flower-container');
   
-    // Yeni bir resim öğesi oluştur
+   
     const newImage = document.createElement('img');
     newImage.src = './resimler/'+imageSrc;
     newImage.classList.add('flower');
   
-    // Tüm resimlerin üst üste gelmesini sağla
+   
     newImage.style.position = 'absolute';
     newImage.style.left = '0';
     newImage.style.top = '0';
   
-    // Çiçek konteynerine ekle
+   
     flowerContainer.appendChild(newImage);
   }
   
@@ -63,34 +63,34 @@ function navigateTo(page) {
 
 /*metin daha koyu*/
 function changeColor(element) {
-    element.style.color = "rgb(143, 143, 143)"; // Metin rengini değiştir
+    element.style.color = "rgb(143, 143, 143)"; 
     setTimeout(function() {
-        element.style.color = "rgb(180, 180, 180)"; // Belirli bir süre sonra metin rengini varsayılan olarak geri yükle
-    }, 1000); // 1000 milisaniye (1 saniye) sonra rengi geri yükle
+        element.style.color = "rgb(180, 180, 180)"; 
+    }, 1000); 
 }
 
 
  /*indir butonu*/
  function indir() {
-    // İndirilecek dosyanın URL'si
+   
     var dosyaURL = "C:\Users\SUDENUR\Desktop";
 
-    // Dosyanın indirilmesi için bir bağlantı oluşturulması
+   
     var link = document.createElement("a");
     link.href = dosyaURL;
 
-    // Dosyanın adı (isteğe bağlı)
+   
     link.download = "hello-kity";
 
-    // Bağlantının tıklanması
+  
     document.body.appendChild(link);
     link.click();
 
-    // Bağlantının temizlenmesi
+  
     document.body.removeChild(link);
 }
 /*rastgele çiçek isimleri*/
- // Çiçek isimlerini bir dizi içinde tutalım
+
  var flowerNames = [
     "Gül", "Papatya", "Lavanta", "Menekşe", "Orkide", "Zambak", "Süsen", "Kardelen", "Ayçiçeği","Lale","Karanfil","İris Furcata","Kasımpatı","Sümbül","Zambak","Leylak","Plumeria"
   ];
@@ -165,10 +165,10 @@ $(document).ready(function(){
 
  $(document).ready(function() {
     $(".colorButton").click(function() {
-        // Butonun sınıfından rengi alın
+       
         var color = $(this).attr("class").split(" ")[1];
         
-        // Sayfanın arka plan rengini değiştirin
+       
         $("body").css("background-color",color);
     });
 });
@@ -177,10 +177,35 @@ $(document).ready(function(){
 $(document).ready(function(){
     // Resim üzerine geldiğinde
     $('.image-with-text').hover(function(){
-        $(this).css('filter', 'brightness(0.8)'); // Parlaklığı azalt
+        $(this).css('filter', 'brightness(0.8)'); 
     }, function(){
-        $(this).css('filter', ''); // Normal haline geri dön
+        $(this).css('filter', '');
     });
 });
+
+/*kurdale butonu*/
+function randomPosition() {
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+    $(".kurdale").each(function(){
+        var leftPos = Math.random() * (windowWidth - $(this).width());
+        var topPos = Math.random() * (windowHeight - $(this).height());
+        $(this).css({
+           
+            'left': leftPos ,
+            'top': topPos ,
+        });
+    });
+}
+
+$(document).ready(function(){
+    $("#repositionButton").click(function(){
+        
+        $(".kurdale").show();
+        randomPosition();
+    });
+
+});   
+
 
 

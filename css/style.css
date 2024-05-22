@@ -88,8 +88,8 @@ h1{
 }
 
 .çiçekler:hover {
-    transform: scale(1.05); /* Resmin üzerine gelindiğinde biraz büyüsün */
-}
+    transform: scale(1.05);
+ }
 
 
 .ust-baslik{
@@ -130,10 +130,10 @@ h3{
   }
   
 .rounded-image {
-    width: 200px; /* Resimlerin genişliği */
-    height: 200px; /* Resimlerin yüksekliği */
-    border-radius: 50%; /* Yuvarlak köşeler */
-    margin-right: 10px; /* Resimler arasındaki boşluk */
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 10px; 
     border: 5px solid#E1ACAC;
    /* padding: 5px;*/
 }
@@ -151,18 +151,18 @@ h3{
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
-    display: none; /* Başlangıçta görünmez olacak */
+    display: none; 
 }
 
 .basadonButton.show {
-    display: block; /* Scroll belirli bir mesafeden sonra görünecek */
+    display: block; 
 }
 /*klavyeli çiçekler*/
 #flower-container {
     position: relative;
-    width: 300px; /* veya istediğiniz boyutta */
-    height: 300px; /* veya istediğiniz boyutta */
-    border: 2px solid#E1ACAC ; /* İstediğiniz stil */
+    width: 300px; 
+    height: 300px; 
+    border: 2px solid#E1ACAC ; 
     margin-top: 20px;
     border-radius: 50px;
   }
@@ -173,22 +173,22 @@ h3{
   }
   
 #keyboard button img {
-    width: 100px; /* veya istediğiniz boyutta */
+    width: 100px; 
     height: 100px;
   }
   /*yenileme butonu*/
 #refresh button {
-    background-color: #E1ACAC; /* Arka plan rengi */
-    color: white; /* Metin rengi */
-    border: none; /* Kenarlık yok */
-    border-radius: 5px; /* Kenar yuvarlaklığı */
-    padding: 10px 20px; /* Buton içi dolgusu */
-    text-align: center; /* Metin hizalaması */
-    text-decoration: none; /* Metin altı çizgisi yok */
+    background-color: #E1ACAC; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    text-align: center; 
+    text-decoration: none; 
     display: inline-block;
-    font-size: 16px; /* Metin boyutu */
-    margin: 4px 2px; /* Butonlar arası boşluk */
-    cursor: pointer; /* İmleci el şekline dönüştür */
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
   }
   /*başka sayfaya gitmek için*/
 nav {
@@ -297,33 +297,32 @@ textarea {
 }
 .colorButton {
     cursor: pointer;
-    width: 50px; /* Şeklin boyutunu ayarlayın */
-    height: 50px; /* Şeklin boyutunu ayarlayın */
-    border-radius: 50%; /* Şeklin daire şeklinde olmasını sağlayın */
-    border: 1px solid #A87676; /* Kenar çizgisini kaldırın */
-    outline: none; /* Odaklandığında kenar çizgisini kaldırın */
-    margin: 10px; /* Butonlar arasındaki boşluğu ayarlayın */
-    
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+    border: 1px solid #A87676;
+    outline: none; 
+    margin: 10px; 
 }
 
 .ilk {
-    background-color:#F9F5F6; /* Kırmızı arka plan rengi */
+    background-color:#F9F5F6; 
 }
 
 .orta {
-    background-color:#F8E8EE ; /* Mavi arka plan rengi */
+    background-color:#F8E8EE ; 
 }
 
 .son {
-    background-color:#FDCEDF; /* Yeşil arka plan rengi */
+    background-color:#FDCEDF; 
 }
 /*bulanıklaştırma*/
 
 .image-with-text {
-    transition: filter 0.3s ease; /* Geçiş efekti için */
+    transition: filter 0.3s ease; 
 }
 .image-with-text:hover {
-    filter: brightness(0.8); /* Hover durumunda parlaklık ayarı */
+    filter: brightness(0.8);
 }
 
 .social-icons li {
@@ -331,11 +330,11 @@ textarea {
     margin-right: 10px;
 }
 .social-icons li a {
-    display: block; /* Bağlantıları blok elemente dönüştürerek tam boyutlu hale getirir */
+    display: block; 
 }
 /*metni daha koyu*/
 .metin {
-    color:rgb(180, 180, 180) ; /* Varsayılan renk */
+    color:rgb(180, 180, 180) ; 
     transition: color 0.3s; /* Renk değişimine geçiş efekti */
 }
 .metin:hover {
@@ -345,19 +344,19 @@ textarea {
   
 .indirtuşu{
   
-    background-color: #E1ACAC; /* Arka plan rengi */
-    color: white; /* Metin rengi */
-    border: none; /* Kenarlık yok */
-    border-radius: 5px; /* Kenar yuvarlaklığı */
-    padding: 10px 25.5px; /* Buton içi dolgusu */
-    text-align: center; /* Metin hizalaması */
-    text-decoration: none; /* Metin altı çizgisi yok */
+    background-color: #E1ACAC; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 25.5px; 
+    text-align: center; 
+    text-decoration: none; 
     display: inline-block;
-    font-size: 16px; /* Metin boyutu */
-    margin: 4px 2px; /* Butonlar arası boşluk */
+    font-size: 16px; 
+    margin: 4px 2px; 
     left: 100px;
     bottom: 45.8px;
-    cursor: pointer; /* İmleci el şekline dönüştür */
+    cursor: pointer; 
     
 }
 
@@ -431,10 +430,10 @@ input[type="text"] {
 
     left: 16%; 
     transform: translateX(-50%); 
-    padding: 10px; /* Yeni eklenen özellik */
-    background-color: #F8E8EE; /* Yeni eklenen özellik */
-    color: #6c757d; /* Yeni eklenen özellik */
-    border: none; /* Yeni eklenen özellik */
+    padding: 10px; 
+    background-color: #F8E8EE; 
+    color: #6c757d;
+    border: none;
     cursor: pointer;
    
 }
@@ -478,7 +477,7 @@ input[type="text"] {
   .sidepanel .closebtn {
     position: absolute;
     top: 0;
-    left: 25px; /* sol -> sağ */
+    left: 25px; 
     font-size: 36px;
 
   }
@@ -499,30 +498,15 @@ input[type="text"] {
     background-color:#444;
   }
     
- 
-@media only screen and (max-width: 600px) {
-    
-    .openbtn {
-        font-size: 100%;
-        padding: 2% 2%;
-       
-      }
-        
-    
-  }
-  
 
-
-  
-  
   .sidepanel .navbar-nav {
     display: grid;
-    grid-template-columns: 1fr; /* Sadece bir sütun */
-    grid-gap: 10px; /* Öğeler arası boşluk */
+    grid-template-columns: 1fr; 
+    grid-gap: 10px; 
   }
 
   .sidepanel .navbar-nav li {
-    list-style: none; /* Madde işaretlerini kaldır */
+    list-style: none; 
 
   }
   
@@ -534,6 +518,22 @@ input[type="text"] {
     /*color: white;*/
     text-decoration: none;
   }
+  /*kurdale butonu*/
+.kurdale {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    width: 60px; 
+    height: auto; 
+}
+#repositionButton {
+    padding: 10px 20px;
+    background-color:#A87676;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   top: 160px;
+}
     
   
   
